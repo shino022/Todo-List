@@ -16,15 +16,13 @@ export const Projects = (function() {
   function setProject(name, project) {
     localStorage.setItem(name, JSON.stringify(project));
   }
+  function getCurrentProject() {
+    const projectName = document.querySelector('#project-name');
+    return projectName.textContent;
+  }
   const createProject = (name) => {
     const todoList = [];
     return {name, todoList};
   }
-  return {addNewProject, getProject, setProject, getProjectsNames};
+  return {addNewProject, getProject, setProject, getProjectsNames, getCurrentProject};
 })();
-/***
- * localstorage{
- *              project01: {todoList[todo{}, todo{}, todo{}]}
-                project02: {todoList[]}
-                }
- */

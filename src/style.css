@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body {
+  margin:0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body>div {
+  display:grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 150px 1fr;
+}
+#header {
+  grid-area: 1 / 1 / 2 / 3;
+  padding: 10px 50px;
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+#sidebar {
+  padding: 10px 50px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#projects {
+  padding-top: 5px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#sidebar form{
+  font-size:16px;
+  height:36px;
+}
+
+#sidebar div{
+  padding-left:5px;
+}
+
+form {
+  position: absolute;
+}
+
+form input{
+  height: 22px;
+  font-size: 20px;
+  padding:2px;
+}
+
+button {
+  height: 22px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+  font-size: 18px;
+  font-weight: 700;
+}
+.hidden {
+  Display: none;
+}
+#body {
+  padding: 20px 50px;
+}
+#project-name {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.todo {
+  display:flex;
+  font-size: 18px;
+  padding-left: 10px;
+  justify-content: space-between;
+  flex:1;
+  width: 300px;
+}

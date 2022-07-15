@@ -1,14 +1,11 @@
-import './style.css';
+import "./style.css";
 import { Dom } from './dom';
 import { Projects } from './projects';
 import { todos } from './todos';
-localStorage.clear();
-Projects.addNewProject('p1');
-Projects.addNewProject('p2');
-Projects.addNewProject('p3');
+import { format } from 'date-fns';
 
-todos.addTodo('p1', 'soccer', '22-22-2022');
-todos.addTodo('p2', 'aaaaawqqw', '22-22-2022');
-todos.addTodo('p3', 'aawef', '22-22-2022');
-console.log(Projects.getProjectsNames());
+localStorage.clear();
+localStorage.setItem('Project01', '{"name":"Project01","todoList":[]}');
 document.body.appendChild(Dom.renderPage());
+Dom.renderTodoList('Project01');
+
